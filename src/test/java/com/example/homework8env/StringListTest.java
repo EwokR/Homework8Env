@@ -78,20 +78,21 @@ public class StringListTest {
     @Test
     public void addIndexItemCapacityTest1() {
         StringList stringList = new StringListImpl();
-        stringList.add(1, "test1");
-        stringList.add(2, "test2");
-        stringList.add(3, "test3");
-        stringList.add(4, "test4");
-        stringList.add(5, "test5");
-        stringList.add(6, "test6");
-        stringList.add(7, "test7");
-        stringList.add(8, "test8");
-        stringList.add(9, "test9");
-        stringList.add(10, "test10");
-        stringList.add(11, "test11");
-        stringList.add(12, "test14");
-        stringList.add(13, "test13");
-        stringList.add(0, "test15");
+        stringList.add(0, "test1");
+        stringList.add(1, "test2");
+        stringList.add(2, "test3");
+        stringList.add(3, "test4");
+        stringList.add(4, "test5");
+        stringList.add(5, "test6");
+        stringList.add(6, "test7");
+        stringList.add(7, "test8");
+        stringList.add(8, "test9");
+        stringList.add(9, "test10");
+        stringList.add(10, "test11");
+        stringList.add(11, "test14");
+        stringList.add(12, "test13");
+        stringList.add(13, "test14");
+        stringList.add(14, "test15");
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> stringList.add(15, "test16"));
     }
@@ -99,21 +100,21 @@ public class StringListTest {
     @Test
     public void addIndexItemCapacityTest2() {
         StringList stringList = new StringListImpl();
-        stringList.add(1, "test1");
-        stringList.add(2, "test2");
-        stringList.add(3, "test3");
-        stringList.add(4, "test4");
-        stringList.add(5, "test5");
-        stringList.add(6, "test6");
-        stringList.add(7, "test7");
-        stringList.add(8, "test8");
-        stringList.add(9, "test9");
-        stringList.add(10, "test10");
-        stringList.add(11, "test11");
-        stringList.add(12, "test14");
-        stringList.add(13, "test13");
-        stringList.add(14, "test14");
-        stringList.add(0, "test15");
+        stringList.add(0, "test1");
+        stringList.add(1, "test2");
+        stringList.add(2, "test3");
+        stringList.add(3, "test4");
+        stringList.add(4, "test5");
+        stringList.add(5, "test6");
+        stringList.add(6, "test7");
+        stringList.add(7, "test8");
+        stringList.add(8, "test9");
+        stringList.add(9, "test10");
+        stringList.add(10, "test11");
+        stringList.add(11, "test14");
+        stringList.add(12, "test13");
+        stringList.add(13, "test14");
+        stringList.add(14, "test15");
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(() -> stringList.add(14, "test16"));
     }
@@ -137,21 +138,21 @@ public class StringListTest {
     @Test
     public void setTest3() {
         StringList stringList = new StringListImpl();
-        stringList.add(1, "test1");
-        stringList.add(2, "test2");
-        stringList.add(3, "test3");
-        stringList.add(4, "test4");
-        stringList.add(5, "test5");
-        stringList.add(6, "test6");
-        stringList.add(7, "test7");
-        stringList.add(8, "test8");
-        stringList.add(9, "test9");
-        stringList.add(10, "test10");
-        stringList.add(11, "test11");
-        stringList.add(12, "test14");
-        stringList.add(13, "test13");
-        stringList.add(14, "test14");
-        stringList.add(0, "test15");
+        stringList.add(0, "test1");
+        stringList.add(1, "test2");
+        stringList.add(2, "test3");
+        stringList.add(3, "test4");
+        stringList.add(4, "test5");
+        stringList.add(5, "test6");
+        stringList.add(6, "test7");
+        stringList.add(7, "test8");
+        stringList.add(8, "test9");
+        stringList.add(9, "test10");
+        stringList.add(10, "test11");
+        stringList.add(11, "test14");
+        stringList.add(12, "test13");
+        stringList.add(13, "test14");
+        stringList.add(14, "test15");
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(()->stringList.set(16,"test"));
     }
@@ -159,21 +160,21 @@ public class StringListTest {
     @Test
     public void removeItemTest1() {
         StringList stringList = new StringListImpl();
-        stringList.add(1, "test1");
-        stringList.add(2, "test2");
-        stringList.add(3, "test3");
-        stringList.add(4, "test4");
-        stringList.add(5, "test5");
-        stringList.add(6, "test6");
-        stringList.add(7, "test7");
-        stringList.add(8, "test8");
-        stringList.add(9, "test9");
-        stringList.add(10, "test10");
-        stringList.add(11, "test11");
-        stringList.add(12, "test14");
-        stringList.add(13, "test13");
-        stringList.add(14, "test14");
-        stringList.add(0, "test15");
+        stringList.add(0, "test1");
+        stringList.add(1, "test2");
+        stringList.add(2, "test3");
+        stringList.add(3, "test4");
+        stringList.add(4, "test5");
+        stringList.add(5, "test6");
+        stringList.add(6, "test7");
+        stringList.add(7, "test8");
+        stringList.add(8, "test9");
+        stringList.add(9, "test10");
+        stringList.add(10, "test11");
+        stringList.add(11, "test14");
+        stringList.add(12, "test13");
+        stringList.add(13, "test14");
+        stringList.add(14, "test15");
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(()->stringList.remove("test16"));
     }
@@ -181,21 +182,21 @@ public class StringListTest {
     @Test
     public void removeItemTest2() {
         StringList stringList = new StringListImpl();
-        stringList.add(1, "test1");
-        stringList.add(2, "test2");
-        stringList.add(3, "test3");
-        stringList.add(4, "test4");
-        stringList.add(5, "test5");
-        stringList.add(6, "test6");
-        stringList.add(7, "test7");
-        stringList.add(8, "test8");
-        stringList.add(9, "test9");
-        stringList.add(10, "test10");
-        stringList.add(11, "test11");
-        stringList.add(12, "test14");
-        stringList.add(13, "test13");
-        stringList.add(14, "test14");
-        stringList.add(0, "test15");
+        stringList.add(0, "test1");
+        stringList.add(1, "test2");
+        stringList.add(2, "test3");
+        stringList.add(3, "test4");
+        stringList.add(4, "test5");
+        stringList.add(5, "test6");
+        stringList.add(6, "test7");
+        stringList.add(7, "test8");
+        stringList.add(8, "test9");
+        stringList.add(9, "test10");
+        stringList.add(10, "test11");
+        stringList.add(11, "test14");
+        stringList.add(12, "test13");
+        stringList.add(13, "test14");
+        stringList.add(14, "test15");
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(()->stringList.remove(null));
     }
@@ -203,21 +204,21 @@ public class StringListTest {
     @Test
     public void removeIndexTest1() {
         StringList stringList = new StringListImpl();
-        stringList.add(1, "test1");
-        stringList.add(2, "test2");
-        stringList.add(3, "test3");
-        stringList.add(4, "test4");
-        stringList.add(5, "test5");
-        stringList.add(6, "test6");
-        stringList.add(7, "test7");
-        stringList.add(8, "test8");
-        stringList.add(9, "test9");
-        stringList.add(10, "test10");
-        stringList.add(11, "test11");
-        stringList.add(12, "test14");
-        stringList.add(13, "test13");
-        stringList.add(14, "test14");
-        stringList.add(0, "test15");
+        stringList.add(0, "test1");
+        stringList.add(1, "test2");
+        stringList.add(2, "test3");
+        stringList.add(3, "test4");
+        stringList.add(4, "test5");
+        stringList.add(5, "test6");
+        stringList.add(6, "test7");
+        stringList.add(7, "test8");
+        stringList.add(8, "test9");
+        stringList.add(9, "test10");
+        stringList.add(10, "test11");
+        stringList.add(11, "test14");
+        stringList.add(12, "test13");
+        stringList.add(13, "test14");
+        stringList.add(14, "test15");
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(()->stringList.remove(-1));
     }
@@ -225,21 +226,21 @@ public class StringListTest {
     @Test
     public void removeIndexTest2() {
         StringList stringList = new StringListImpl();
-        stringList.add(1, "test1");
-        stringList.add(2, "test2");
-        stringList.add(3, "test3");
-        stringList.add(4, "test4");
-        stringList.add(5, "test5");
-        stringList.add(6, "test6");
-        stringList.add(7, "test7");
-        stringList.add(8, "test8");
-        stringList.add(9, "test9");
-        stringList.add(10, "test10");
-        stringList.add(11, "test11");
-        stringList.add(12, "test14");
-        stringList.add(13, "test13");
-        stringList.add(14, "test14");
-        stringList.add(0, "test15");
+        stringList.add(0, "test1");
+        stringList.add(1, "test2");
+        stringList.add(2, "test3");
+        stringList.add(3, "test4");
+        stringList.add(4, "test5");
+        stringList.add(5, "test6");
+        stringList.add(6, "test7");
+        stringList.add(7, "test8");
+        stringList.add(8, "test9");
+        stringList.add(9, "test10");
+        stringList.add(10, "test11");
+        stringList.add(11, "test14");
+        stringList.add(12, "test13");
+        stringList.add(13, "test14");
+        stringList.add(14, "test15");
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(()->stringList.remove(16));
     }
@@ -247,21 +248,21 @@ public class StringListTest {
     @Test
     public void containsTest() {
         StringList stringList = new StringListImpl();
-        stringList.add(1, "test1");
-        stringList.add(2, "test2");
-        stringList.add(3, "test3");
-        stringList.add(4, "test4");
-        stringList.add(5, "test5");
-        stringList.add(6, "test6");
-        stringList.add(7, "test7");
-        stringList.add(8, "test8");
-        stringList.add(9, "test9");
-        stringList.add(10, "test10");
-        stringList.add(11, "test11");
-        stringList.add(12, "test14");
-        stringList.add(13, "test13");
-        stringList.add(14, "test14");
-        stringList.add(0, "test15");
+        stringList.add(0, "test1");
+        stringList.add(1, "test2");
+        stringList.add(2, "test3");
+        stringList.add(3, "test4");
+        stringList.add(4, "test5");
+        stringList.add(5, "test6");
+        stringList.add(6, "test7");
+        stringList.add(7, "test8");
+        stringList.add(8, "test9");
+        stringList.add(9, "test10");
+        stringList.add(10, "test11");
+        stringList.add(11, "test14");
+        stringList.add(12, "test13");
+        stringList.add(13, "test14");
+        stringList.add(14, "test15");
         assertThatExceptionOfType(IllegalArgumentException.class)
                 .isThrownBy(()->stringList.contains(null));
     }
