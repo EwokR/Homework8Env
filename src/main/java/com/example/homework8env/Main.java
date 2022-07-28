@@ -1,5 +1,7 @@
-import service.StringList;
-import service.StringListImpl;
+package com.example.homework8env;
+
+import com.example.homework8env.service.StringList;
+import com.example.homework8env.service.StringListImpl;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package service;
+package com.example.homework8env.service;
 
 public interface StringList {
     String add(String item);
