@@ -70,9 +70,9 @@ public class StringListTest {
     @Test
     public void addNullIndexTest2() {
         StringListImpl stringList = new StringListImpl();
-        assertThat(stringList.add(3, "test"));
+        assertThat(stringList.add(0, "test"));
         assertThatExceptionOfType(IllegalArgumentException.class)
-                .isThrownBy(() -> stringList.add(3, null));
+                .isThrownBy(() -> stringList.add(0, null));
     }
 
     @Test
